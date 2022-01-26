@@ -6,9 +6,11 @@ import csv
 header = ["model","serial","rack/blade","name","vendor","model","pci_slot","flash_controller","flash_controller_state","vendor","pysical_card_type","physical_card_status","pysical_card_type","physical_card_status"]
 data = []
 
+top=500
+
 def get_flex_storage(apiClient):
     api_instance = intersight.api.storage_api.StorageApi(apiClient)
-    flash_controllers = api_instance.get_storage_flex_flash_controller_list()
+    flash_controllers = api_instance.get_storage_flex_flash_controller_list(top=top)
     for fcontroller in flash_controllers.results:
         #uses the compute board moid to gather compute unit data
         compute_board = fcontroller["compute_board"]["moid"]
