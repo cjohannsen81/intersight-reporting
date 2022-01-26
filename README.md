@@ -1,6 +1,9 @@
 # intersight-reporting
 This python script is used to collect data from Cisco Intersight. The focus was to gather information about all servers that use SD-Cards and Controllers and check if there's another storage controller available.
 
+## Example
+The sd_info.csv file shows the example csv export for the SD-Card controller available in the server.
+
 ## Setup
 There are some requirements:
 1. Python on your machine

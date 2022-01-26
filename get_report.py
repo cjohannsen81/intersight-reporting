@@ -16,7 +16,7 @@ def get_flex_storage(apiClient):
         data.append(fcontroller["model"])
         data.append(fcontroller["controller_state"])
         data.append(fcontroller["vendor"])
-        physical_drives = flash_controller["flex_flash_physical_drives"]
+        physical_drives = fcontroller["flex_flash_physical_drives"]
         for p_drive in physical_drives:
             physical_drive = p_drive["moid"]
             get_sd_drives(apiClient,physical_drive)

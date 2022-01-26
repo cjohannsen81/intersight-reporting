@@ -1,1 +1,29 @@
 model,serial,rack/blade,name,vendor,model,pci_slot,flash_controller,flash_controller_state,vendor,pysical_card_type,physical_card_status,pysical_card_type,physical_card_status
+model,serial,rack/blade,name,vendor,model,pci_slot,flash_controller,flash_controller_state,vendor,pysical_card_type,physical_card_status,pysical_card_type,physical_card_status
+model,serial,rack/blade,name,vendor,model,pci_slot,flash_controller,flash_controller_state,vendor,pysical_card_type,physical_card_status,pysical_card_type,physical_card_status
+HX220C-M4S,FCH2127V15H,Rack-Server,DCDPMSO001c1,LSI Logic,Cisco 12G Modular SAS Pass through Controller,SLOT-HBA,,OK,Cypress,FX3S configured,active,FX3S configured,active
+HX220C-M4S,FCH2126V1UG,Rack-Server,DCDPMSO001c3,LSI Logic,Cisco 12G Modular SAS Pass through Controller,SLOT-HBA,,OK,Cypress,FX3S configured,active,FX3S configured,active
+HX220C-M4S,FCH2126V1XM,Rack-Server,DCDPMSO001c2,LSI Logic,Cisco 12G Modular SAS Pass through Controller,SLOT-HBA,,OK,Cypress,FX3S configured,active,FX3S configured,active
+UCSC-C460-M4,FCH1936V0RH,Rack-Server,sjc18-185-d3-c460-2-cimc,LSI Logic,Cisco 12G SAS Modular Raid Controller for C460,SAS,,No SDCards Available In Slots,Cypress,N/A,,N/A,
+UCSC-C460-M4,FCH1936V0SP,Rack-Server,sjc18-185-d3-esxc460-1cimc,LSI Logic,Cisco 12G SAS Modular Raid Controller for C460,SAS,,No SDCards Available In Slots,Cypress,N/A,,N/A,
+HX240C-M4SX,FCH2024V0GW,Rack-Server,ucspls2-1,LSI Corp.,Cisco 12G Modular SAS Pass through Controller,HBA,Intel Corp.,Wellsburg Dual 4-Port SATA Storage Control Unit,,FX3S,FFC_USB_CONNECTED,Cypress
+HX240C-M4SX,FCH1925V2MK,Rack-Server,ucspls2-3,Intel Corp.,Wellsburg Dual 4-Port SATA Storage Control Unit,,LSI Corp.,LSI MegaRAID SAS 3108,HBA,FX3S,FFC_USB_CONNECTED,Cypress
+UCSB-B200-M3,FCH17367EBC,Blade-Server,UCS02-1-1,LSI Logic   Symbios Logic,LSI MegaRAID SAS 2004 ROMB,,FlexFlash-0,FFC_USB_DISCONNECTED,Cypress
+UCSB-B200-M3,FCH1828KATL,Blade-Server,UCS02-1-3,LSI Logic   Symbios Logic,LSI MegaRAID SAS 2004 ROMB,,FlexFlash-0,FFC_USB_DISCONNECTED,Cypress
+HX220C-M4S,FCH1942V08J,Rack-Server,UCS02-3,Intel Corp.,Wellsburg Dual 4-Port SATA Storage Control Unit,,LSI Corp.,Cisco 12G Modular SAS Pass through Controller,HBA,FX3S,FFC_USB_CONNECTED,Cypress
+HX220C-M4S,FCH1939V0HK,Rack-Server,UCS02-1,Intel Corp.,Wellsburg Dual 4-Port SATA Storage Control Unit,,LSI Corp.,Cisco 12G Modular SAS Pass through Controller,HBA,FX3S,FFC_USB_CONNECTED,Cypress
+HX220C-M4S,FCH2029V39V,Rack-Server,UCS02-2,Intel Corp.,Wellsburg Dual 4-Port SATA Storage Control Unit,,LSI Corp.,Cisco 12G Modular SAS Pass through Controller,HBA,FX3S,FFC_USB_CONNECTED,Cypress
+UCSB-B200-M3,FCH1734J4UD,Blade-Server,UCS02-1-2,LSI Logic   Symbios Logic,LSI MegaRAID SAS 2004 ROMB,SAS,FlexFlash-0,FFC_USB_DISCONNECTED,Cypress
+UCSB-B200-M4,FLM1947BNL5,Blade-Server,UCSPLS-1-2,Cisco Systems Inc,UCSB-MRAID12G,SAS,FX3S,FFC_FAILED,Cypress
+UCSB-B200-M4,FLM1947BNMB,Blade-Server,UCSPLS-1-1,Cisco Systems Inc,UCSB-MRAID12G,SAS,FX3S,FFC_FAILED,Cypress
+UCSB-B200-M3,FCH17367BTW,Blade-Server,UCSPLS-1-3,LSI Logic   Symbios Logic,LSI MegaRAID SAS 2004 ROMB,SAS,FlexFlash-0,FFC_FAILED,Cypress
+UCSB-B200-M4,FCH20237C9T,Blade-Server,UCSPLS-1-4,FX3S,FFC_USB_DISCONNECTED,Cypress
+UCSB-B200-M4,FLM1947BNJU,Blade-Server,ucspls2-1-8,Cisco Systems Inc,UCSB-MRAID12G,,FX3S,FFC_FAILED,Cypress
+UCSB-B200-M3,FCH16177440,Blade-Server,ucspls2-1-7,LSI Logic   Symbios Logic,LSI MegaRAID SAS 2004 ROMB,,FlexFlash-0,FFC_FAILED,Cypress
+UCSB-B200-M4,FCH183770HA,Blade-Server,ucspls2-1-1,Cisco Systems Inc,UCSB-MRAID12G,,FX3S,FFC_FAILED,Cypress
+UCSB-B200-M4,FLM1945B8TR,Blade-Server,ucspls2-1-2,Cisco Systems Inc,UCSB-MRAID12G,,FX3S,FFC_FAILED,Cypress
+HX220C-M4S,FCH2126V1XM,Rack-Server,sjc18-185-D2-HXEdge1-cimc,LSI Logic,Cisco 12G Modular SAS Pass through Controller,SLOT-HBA,,OK,Cypress,FX3S configured,active,FX3S configured,active
+HX220C-M4S,FCH2126V1UG,Rack-Server,sjc18-185-D2-HXEdge2-cimc,LSI Logic,Cisco 12G Modular SAS Pass through Controller,SLOT-HBA,,OK,Cypress,FX3S configured,active,FX3S configured,active
+HX240C-M4SX,FCH1925V2E8,Rack-Server,ucspls2-4,Intel Corp.,Wellsburg Dual 4-Port SATA Storage Control Unit,,LSI Corp.,LSI MegaRAID SAS 3108,HBA,FX3S,FFC_USB_CONNECTED,Cypress
+HX240C-M4SX,FCH1925V2MJ,Rack-Server,ucspls2-2,Intel Corp.,Wellsburg Dual 4-Port SATA Storage Control Unit,,LSI Corp.,LSI MegaRAID SAS 3108,HBA,FX3S,FFC_USB_CONNECTED,Cypress
+UCSB-B200-M3,FCH17367DVB,Blade-Server,UCSPLS-1-7,LSI Logic   Symbios Logic,LSI MegaRAID SAS 2004 ROMB,SAS,FlexFlash-0,FFC_FAILED,Cypress
