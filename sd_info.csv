@@ -1,6 +1,4 @@
 model,serial,rack/blade,name,vendor,model,pci_slot,flash_controller,flash_controller_state,vendor,pysical_card_type,physical_card_status,pysical_card_type,physical_card_status
-model,serial,rack/blade,name,vendor,model,pci_slot,flash_controller,flash_controller_state,vendor,pysical_card_type,physical_card_status,pysical_card_type,physical_card_status
-model,serial,rack/blade,name,vendor,model,pci_slot,flash_controller,flash_controller_state,vendor,pysical_card_type,physical_card_status,pysical_card_type,physical_card_status
 HX220C-M4S,FCH2127V15H,Rack-Server,DCDPMSO001c1,LSI Logic,Cisco 12G Modular SAS Pass through Controller,SLOT-HBA,,OK,Cypress,FX3S configured,active,FX3S configured,active
 HX220C-M4S,FCH2126V1UG,Rack-Server,DCDPMSO001c3,LSI Logic,Cisco 12G Modular SAS Pass through Controller,SLOT-HBA,,OK,Cypress,FX3S configured,active,FX3S configured,active
 HX220C-M4S,FCH2126V1XM,Rack-Server,DCDPMSO001c2,LSI Logic,Cisco 12G Modular SAS Pass through Controller,SLOT-HBA,,OK,Cypress,FX3S configured,active,FX3S configured,active
