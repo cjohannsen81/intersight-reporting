@@ -6,7 +6,7 @@ import csv
 header = ["model","serial","rack/blade","name","vendor","model","pci_slot","flash_controller","flash_controller_state","vendor","pysical_card_type","physical_card_status","pysical_card_type","physical_card_status"]
 data = []
 
-top=500
+top=3000
 
 def get_flex_storage(apiClient):
     api_instance = intersight.api.storage_api.StorageApi(apiClient)
