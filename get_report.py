@@ -6,8 +6,8 @@ import csv
 header = ["model","serial","rack/blade","name","vendor","model","pci_slot","flash_controller","flash_controller_state","vendor","pysical_card_type","physical_card_status","pysical_card_type","physical_card_status"]
 data = []
 
-top=1000
-skip=1000
+top = 1000
+skip = 0
 
 def get_flex_storage(apiClient):
     api_instance = intersight.api.storage_api.StorageApi(apiClient)
@@ -52,9 +52,13 @@ def get_compute(apiClient,compute_unit):
         data.append("Blade-Server")
         data.append(mapping["name"])
     storage_controllers = summary["storage_controllers"]
-    for i in storage_controllers:
-        moid = i["moid"]
-        get_storage_controller(apiClient,moid)
+    #print(storage_controllers)
+    if storage_controllers:
+        for i in storage_controllers:
+            moid = i["moid"]
+            get_storage_controller(apiClient,moid)
+    else:
+        data.extend(["None","None","None","None","None","None"])
 
 def get_storage_controller(apiClient,moid):
     api_instance = intersight.api.storage_api.StorageApi(apiClient)
