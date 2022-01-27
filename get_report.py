@@ -52,7 +52,6 @@ def get_compute(apiClient,compute_unit):
         data.append("Blade-Server")
         data.append(mapping["name"])
     storage_controllers = summary["storage_controllers"]
-    #print(storage_controllers)
     if storage_controllers:
         for i in storage_controllers:
             moid = i["moid"]
