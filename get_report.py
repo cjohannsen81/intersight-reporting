@@ -52,11 +52,21 @@ def get_compute(apiClient,compute_unit):
         data.append("Blade-Server")
         data.append(mapping["name"])
     storage_controllers = summary["storage_controllers"]
-    if storage_controllers:
-        for i in storage_controllers:
-            moid = i["moid"]
-            get_storage_controller(apiClient,moid)
-    else:
+    #kinda weird but it was late and the index() didn't work, servers can have 0,1,2 controller
+    number = len(storage_controllers)
+    if number == 2:
+        print(storage_controllers[0]["moid"])
+        moid = storage_controllers[0]["moid"]
+        get_storage_controller(apiClient,moid)
+        print(storage_controllers[1]["moid"])
+        moid = storage_controllers[1]["moid"]
+        get_storage_controller(apiClient,moid)
+    if number == 1:
+        print(storage_controllers[0]["moid"])
+        moid = storage_controllers[0]["moid"]
+        get_storage_controller(apiClient,moid)
+        data.extend(["None","None","None"])
+    if number == 0:
         data.extend(["None","None","None","None","None","None"])
 
 def get_storage_controller(apiClient,moid):
