@@ -3,7 +3,7 @@ import intersight.api.compute_api
 import credentials
 import csv
 
-header = ["model","serial","rack/blade","name","vendor","model","pci_slot","flash_controller","flash_controller_state","vendor","pysical_card_type","physical_card_status","pysical_card_type","physical_card_status"]
+header = ["model","serial","rack/blade","name","vendor","model","pci_slot","vendor","model","pci_slot","flash_controller","flash_controller_state","vendor","pysical_card_type","physical_card_status","pysical_card_type","physical_card_status"]
 data = []
 
 top = 1000
@@ -19,7 +19,9 @@ def get_flex_storage(apiClient):
         data.append(fcontroller["model"])
         data.append(fcontroller["controller_state"])
         data.append(fcontroller["vendor"])
+        print(fcontroller)
         physical_drives = fcontroller["flex_flash_physical_drives"]
+        #print(physical_drives)
         for p_drive in physical_drives:
             physical_drive = p_drive["moid"]
             get_sd_drives(apiClient,physical_drive)
@@ -55,14 +57,11 @@ def get_compute(apiClient,compute_unit):
     #kinda weird but it was late and the index() didn't work, servers can have 0,1,2 controller
     number = len(storage_controllers)
     if number == 2:
-        print(storage_controllers[0]["moid"])
         moid = storage_controllers[0]["moid"]
         get_storage_controller(apiClient,moid)
-        print(storage_controllers[1]["moid"])
         moid = storage_controllers[1]["moid"]
         get_storage_controller(apiClient,moid)
     if number == 1:
-        print(storage_controllers[0]["moid"])
         moid = storage_controllers[0]["moid"]
         get_storage_controller(apiClient,moid)
         data.extend(["None","None","None"])
